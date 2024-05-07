@@ -6,6 +6,8 @@ app = Flask(__name__)
 @app.route('/open-webcam')
 def open_webcam():
     import webcam
+    return "<h1>Opening Webcam</h1>"
+
 
 @app.route('/take-sample/<userId>')
 def take_sample(userId):
